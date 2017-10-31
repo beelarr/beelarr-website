@@ -74,6 +74,9 @@ class App extends Component {
                         <a className="project-links pl-right" href="https://twitter.com/_beelarr_"><p>Twitter</p></a>
                         <a className="project-links" href="https://linkedin.com/in/beelarr"><p>LinkedIn</p></a>
                     </div>
+                    <hr className="hr-2"/>
+                    
+                    <small>© 2017 Bryon Larrance</small>
                 </div>
             </div>
         );
