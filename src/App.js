@@ -7,7 +7,6 @@ class App extends Component {
     render() {
         return (
             <div className="wrapper">
-
                 <div className="App">
                     <img src={pic} className="App-logo" alt="profile pic" />
                     <h1 className="App-title">Bryon Larrance</h1>
@@ -75,7 +74,7 @@ class App extends Component {
                         <a className="project-links" href="https://linkedin.com/in/beelarr"><p>LinkedIn</p></a>
                     </div>
                     <hr className="hr-2"/>
-                    
+
                     <small>© 2017 Bryon Larrance</small>
                 </div>
             </div>
