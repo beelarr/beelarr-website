@@ -159,5 +159,12 @@ path {
   background-repeat: no-repeat;
   background-size: cover;
   opacity: .2;
+  animation: rainbow-background 15s ease infinite;
 }
 
+@keyframes rainbow-background {
+  0%{opacity: .3}
+  50%{opacity: .6}
+  100%{opacity: .3}
+
+}
