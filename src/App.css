@@ -127,7 +127,7 @@ path {
 
 .wrapper {
   height: 200vh;
-  width: 100%;
+  width: 100vw;
   left:0;
   right: 0;
   top: 0;
@@ -135,10 +135,10 @@ path {
   opacity: 1;
   position: absolute;
   background: linear-gradient(124deg, #ff2400, #ff0a0a, #e8b71d, #eff41e, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
-  background-size: 1800% 1800%;
+  background-size: 10000% 10000%;
 
   z-index: 1;
-  animation: rainbow 15s ease infinite;
+  animation: rainbow 18s ease infinite;
 }
 
 @keyframes rainbow {
@@ -148,6 +148,8 @@ path {
 }
 
 .wrapper:before {
+  height: 100%;
+  width: 100%;
   content: "";
   position: absolute;
   z-index: -1;
@@ -159,20 +161,22 @@ path {
   background-repeat: no-repeat;
   background-size: cover;
   opacity: .2;
-  animation: rainbow-background 15s ease infinite;
+  animation: rainbow-background 25s ease infinite;
 }
 
 @keyframes rainbow-background {
-  0%{opacity: .1}
-  10%{opacity: .2}
-  20%{opacity: .2}
-  30%{opacity: .3}
-  40%{opacity: .4}
-  50%{opacity: .5}
-  60%{opacity: .4}
-  70%{opacity: .3}
-  80%{opacity: .2}
-  90%{opacity: .2}
-  100%{opacity: .1}
+  0% {
+    transform: scale(0.99) rotate(-1deg);
+    /*opacity: 0.2;*/
 
+  }
+  50% {
+    transform: scale(1) rotate(1deg);
+    /*opacity: .4;*/
+
+  }
+  100% {
+    transform: scale(0.99) rotate(-1deg);
+    /*opacity: 0.2;*/
+  }
 }
