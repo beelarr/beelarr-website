@@ -63,13 +63,14 @@ class App extends Component {
                     </div>
                     <p className="github">GitHub</p>
                     <div className="github-projects">
-                        <a className="project-links pl-right" href="https://github.com/beelarr/life_log"><p>Life_Log</p></a>
-                        <a className="project-links pl-right" href="https://github.com/beelarr/reactvr_office"><p>ReactVR</p></a>
+                        <a className="project-links" href="https://github.com/beelarr/life_log"><p>Life_Log</p></a>
+                        <a className="project-links" href="https://github.com/beelarr/reactvr_office"><p>ReactVR</p></a>
                         <a className="project-links" href="https://beelarr.github.io/d21-group-chatty-justice_league/"><p>Justice_League</p></a>
                     </div>
                     <p className="even-more-links">Even more links</p>
                     <div className="github-projects">
                         <a className="project-links pl-right" href="mailto:bryonl@email.com"><p>Email</p></a>
+                        <a className="project-links pl-right" href="https://www.dropbox.com/s/lx3qximp9r5e03j/Bryon%20Larrance%20Resume%20615-306-1144.pdf?dl=0"><p>Resume</p></a>
                         <a className="project-links pl-right" href="https://twitter.com/_beelarr_"><p>Twitter</p></a>
                         <a className="project-links" href="https://linkedin.com/in/beelarr"><p>LinkedIn</p></a>
                     </div>
