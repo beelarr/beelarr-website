@@ -3,27 +3,26 @@
 .App {
   align-items: center;
   flex-direction: column;
-  text-align: center;
-  -webkit-font-smoothing: antialiased;
   margin-left: 20%;
   margin-right: 20%;
+  text-align: center;
   z-index: 1;
+  -webkit-font-smoothing: antialiased;
 }
 
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
   border-radius: 160px;
-  height: 15rem;
-  width: 15rem;
-  margin-top: 2%;
-  justify-content: center;
+  height: 50%;
+  margin-top: 10%;
+  width: 50%;
 }
 
 .App-header {
   background-color: #222;
+  color: white;
   height: 150px;
   padding: 20px;
-  color: white;
 }
 
 .App-title {
@@ -53,8 +52,8 @@ p.github {
   font-family: Lato, sans-serif;
   font-size: 1.5em;
   font-weight: lighter;
-  margin-top: 5%;
   margin-bottom: .2%;
+  margin-top: 5%;
 
 }
 
@@ -62,8 +61,8 @@ p.even-more-links {
   font-family: Lato, sans-serif;
   font-size: 1.5em;
   font-weight: lighter;
-  margin-top: 3%;
   margin-bottom: .2%;
+  margin-top: 3%;
 
 }
 
@@ -71,8 +70,8 @@ p.even-more-links {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  margin-right: 25%;
   margin-left: 25%;
+  margin-right: 25%;
 }
 
 .pl-right {
@@ -80,14 +79,14 @@ p.even-more-links {
 }
 
 hr {
-  width: 65%;
-  margin-top: 1%;
   margin-bottom: 1%;
+  margin-top: 1%;
+  width: 65%;
 }
 hr.style1 {
+  background: #999;
   border: 0;
   border-bottom: 1px dashed #ccc;
-  background: #999;
 
 }
 
@@ -97,10 +96,10 @@ p {
 }
 
 small {
-  font-family: Lato, sans-serif;
-  font-size: em;
-  font-weight: lighter;
   color: darkgray;
+  font-family: Lato, sans-serif;
+  font-size: .8rem;
+  font-weight: lighter;
   margin-top: 3%;
 }
 
@@ -108,8 +107,8 @@ small {
   margin-bottom: 4%;
 }
 svg {
-  max-width: 3em;
   margin: 1%;
+  max-width: 3em;
 }
 
 a:hover {
@@ -126,57 +125,77 @@ path {
 /*BACKGROUND*/
 
 .wrapper {
-  height: 200vh;
-  width: 100vw;
-  left:0;
-  right: 0;
-  top: 0;
+  -webkit-animation: rainbow 25s ease infinite;
+  -moz-animation: rainbow 25s ease infinite;
+  animation: rainbow 25s ease infinite;
+  background: linear-gradient(131deg, #f60909, #f5f609, #09f661, #093cf6, #f60909);
+  background-size: 10000% 10000%;
   bottom: 0;
+  height: 175vh;
+  left:0;
   opacity: 1;
   position: absolute;
-  background: linear-gradient(124deg, #ff2400, #ff0a0a, #e8b71d, #eff41e, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
-  background-size: 10000% 10000%;
-
+  right: 0;
+  top: 0;
+  width: 100vw;
   z-index: 1;
-  animation: rainbow 18s ease infinite;
+
 }
 
+@-webkit-keyframes rainbow {
+  0%{background-position:0% 54%}
+  50%{background-position:100% 47%}
+  100%{background-position:0% 54%}
+}
+@-moz-keyframes rainbow {
+  0%{
+    transform: scale(1);
+    background-position:0% 54%}
+
+  50%{
+    transform: scale(1.2);
+    background-position:100% 47%}
+
+  100%{
+    transform: scale(1);
+    background-position:0% 54%}
+}
 @keyframes rainbow {
-  0%{background-position:0% 82% }
-  50%{background-position:100% 19%}
-  100%{background-position:0% 82%}
+  0%{background-position:0% 54%}
+  50%{background-position:100% 47%}
+  100%{background-position:0% 54%}
 }
 
 .wrapper:before {
-  height: 100%;
-  width: 100%;
-  content: "";
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  animation: rainbow-background 60s ease infinite;
   background: url(assets/389.jpg) fixed center;
   background-repeat: no-repeat;
   background-size: cover;
+  bottom: 0;
+  content: "";
+  height: 100%;
+  left: 0;
   opacity: .2;
-  animation: rainbow-background 25s ease infinite;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  z-index: -1;
 }
 
 @keyframes rainbow-background {
   0% {
-    transform: scale(0.99) rotate(-1deg);
+    transform: scale(1) rotate(-1deg);
     /*opacity: 0.2;*/
 
   }
   50% {
-    transform: scale(1) rotate(1deg);
+    transform: scale(1.1) rotate(1deg);
     /*opacity: .4;*/
 
   }
   100% {
-    transform: scale(0.99) rotate(-1deg);
+    transform: scale(1) rotate(-1deg);
     /*opacity: 0.2;*/
   }
 }
