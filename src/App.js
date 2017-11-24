@@ -64,7 +64,7 @@ class App extends Component {
                     <p className="github">GitHub</p>
                     <div className="github-projects">
                         <a className="project-links pl-right" href="https://github.com/beelarr/life_log"><p>Life_Log</p></a>
-                        <a className="project-links pl-right" href="https://github.com/beelarr/reactvr_office"><p>ReactVR</p></a>
+                        <a className="project-links pl-right" href="http://beelarr-weather-simulator.surge.sh/"><p>ReactVR</p></a>
                         <a className="project-links" href="https://beelarr.github.io/d21-group-chatty-justice_league/"><p>Justice_League</p></a>
                     </div>
                     <p className="even-more-links">Even more links</p>

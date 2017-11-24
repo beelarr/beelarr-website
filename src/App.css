@@ -157,7 +157,7 @@ path {
     background-position:100% 47%}
 
   100%{
-    transform: scale(1);
+    /*transform: scale(1);*/
     background-position:0% 54%}
 }
 @keyframes rainbow {
@@ -183,19 +183,19 @@ path {
   z-index: -1;
 }
 
-@keyframes rainbow-background {
-  0% {
-    transform: scale(1) rotate(-1deg);
-    /*opacity: 0.2;*/
+/*@keyframes rainbow-background {*/
+  /*0% {*/
+    /*transform: scale(1) rotate(-1deg);*/
+    /*!*opacity: 0.2;*!*/
 
-  }
-  50% {
-    transform: scale(1.1) rotate(1deg);
-    /*opacity: .4;*/
+  /*}*/
+  /*50% {*/
+    /*transform: scale(1.1) rotate(1deg);*/
+    /*!*opacity: .4;*!*/
 
-  }
-  100% {
-    transform: scale(1) rotate(-1deg);
-    /*opacity: 0.2;*/
-  }
-}
+  /*}*/
+  /*100% {*/
+    /*transform: scale(1) rotate(-1deg);*/
+    /*!*opacity: 0.2;*!*/
+  /*}*/
+/*}*/
