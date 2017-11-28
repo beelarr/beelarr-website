@@ -11,12 +11,15 @@
 }
 
 .App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  border-radius: 160px;
+  border-radius: 50%;
   height: 50%;
   margin-top: 10%;
   width: 50%;
+
 }
+
+
+
 
 .App-header {
   background-color: #222;
@@ -121,13 +124,46 @@ path {
 
 
 
+/*IMAGE ANIMATION*/
+#spinIt {
+  -webkit-animation: rotation 1s .25s linear;
+}
+
+@-webkit-keyframes rotation {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(1440deg);
+  }
+}
+
+@-moz-keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(1440deg);
+  }
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(1440deg);
+  }
+}
+
+
 
 /*BACKGROUND*/
 
 .wrapper {
-  -webkit-animation: rainbow 25s ease infinite;
-  -moz-animation: rainbow 25s ease infinite;
-  animation: rainbow 25s ease infinite;
+  -webkit-animation: rainbow 5s ease infinite;
+  -moz-animation: rainbow 5s ease infinite;
+  animation: rainbow 5s ease infinite;
   background: linear-gradient(131deg, #f60909, #f5f609, #09f661, #093cf6, #f60909);
   background-size: 10000% 10000%;
   bottom: 0;
@@ -143,9 +179,9 @@ path {
 }
 
 @-webkit-keyframes rainbow {
-  0%{background-position:0% 54%}
-  50%{background-position:100% 47%}
-  100%{background-position:0% 54%}
+  0%{ background-position: 0% 54%;  }
+  50%{ background-position: 100% 47%;  }
+  100%{ background-position: 0% 54%;  }
 }
 @-moz-keyframes rainbow {
   0%{
@@ -183,19 +219,19 @@ path {
   z-index: -1;
 }
 
-/*@keyframes rainbow-background {*/
-  /*0% {*/
-    /*transform: scale(1) rotate(-1deg);*/
-    /*!*opacity: 0.2;*!*/
+@keyframes rainbow-background {
+  0% {
+    transform: scale(1) rotate(-1deg);
+    /*opacity: 0.2;*/
 
-  /*}*/
-  /*50% {*/
-    /*transform: scale(1.1) rotate(1deg);*/
-    /*!*opacity: .4;*!*/
+  }
+  50% {
+    transform: scale(1.1) rotate(1deg);
+    /*opacity: .4;*/
 
-  /*}*/
-  /*100% {*/
-    /*transform: scale(1) rotate(-1deg);*/
-    /*!*opacity: 0.2;*!*/
-  /*}*/
-/*}*/
+  }
+  100% {
+    transform: scale(1) rotate(-1deg);
+    /*opacity: 0.2;*/
+  }
+}

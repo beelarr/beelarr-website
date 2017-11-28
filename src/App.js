@@ -1,14 +1,29 @@
 import React, { Component } from 'react';
-import pic from '../../beelarr/src/assets/Screen Shot 2017-08-18 at 7.36.25 PM copy.png';
+import bizPic from '../../beelarr/src/assets/biz.jpg';
+import partyPic from '../../beelarr/src/assets/party.jpg'
 import './App.css';
 
 
 class App extends Component {
+
+    state = {
+      image: bizPic,
+      wrapper: null,
+      spin: null
+
+
+    };
+
+    hover = () => this.setState({image: partyPic, wrapper: 'wrapper', spin: 'spinIt'});
+    out = () => this.setState({image: bizPic, wrapper: null, spin:null});
+
     render() {
+
         return (
-            <div className="wrapper">
+            <div className={this.state.wrapper}>
                 <div className="App">
-                    <img src={pic} className="App-logo" alt="profile pic" />
+                    <img onMouseOver={this.hover} onMouseOut={this.out} src={this.state.image} className="App-logo" id={this.state.spin} alt="profile pic" />
+
                     <h1 className="App-title">Bryon Larrance</h1>
                     <p>Web, JavaScript, AngularJS, React-Native, Ruby on Rails, Firebase</p>
                     <div className="left">
@@ -64,7 +79,7 @@ class App extends Component {
                     <p className="github">GitHub</p>
                     <div className="github-projects">
                         <a className="project-links pl-right" href="https://github.com/beelarr/life_log"><p>Life_Log</p></a>
-                        <a className="project-links pl-right" href="http://beelarr-weather-simulator.surge.sh/"><p>React VR</p></a>
+                        <a className="project-links pl-right" href="http://beelarr-weather-simulator.surge.sh/"><p>React_VR</p></a>
                         <a className="project-links" href="https://beelarr.github.io/d21-group-chatty-justice_league/"><p>Justice_League</p></a>
                     </div>
                     <p className="even-more-links">Even more links</p>
