@@ -22,7 +22,7 @@ class App extends Component {
         return (
             <div className={this.state.wrapper}>
                 <div className="App">
-                    <img onMouseOver={this.hover} onMouseOut={this.out} src={this.state.image} className="App-logo" id={this.state.spin} alt="profile pic" />
+                    <img onMouseEnter={this.hover} onMouseOut={this.out} src={this.state.image} className="App-logo" id={this.state.spin} alt="profile pic" />
 
                     <h1 className="App-title">Bryon Larrance</h1>
                     <p>Web, JavaScript, AngularJS, React-Native, Ruby on Rails, Firebase</p>

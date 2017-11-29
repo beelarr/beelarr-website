@@ -1,24 +1,18 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:300,400|Lobster');
 
 .App {
-  align-items: center;
-  flex-direction: column;
-  margin-left: 20%;
-  margin-right: 20%;
   text-align: center;
-  z-index: 1;
   -webkit-font-smoothing: antialiased;
 }
 
 .App-logo {
   border-radius: 50%;
-  height: 50%;
+  height: 17rem;
   margin-top: 10%;
-  width: 50%;
+  align-items: center;
+  width: 17rem;
 
 }
-
-
 
 
 .App-header {
@@ -92,6 +86,7 @@ hr.style1 {
   border-bottom: 1px dashed #ccc;
 
 }
+
 
 p {
   font-family: Lato, sans-serif;
