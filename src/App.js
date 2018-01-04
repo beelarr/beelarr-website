@@ -92,7 +92,7 @@ class App extends Component {
                     </div>
                     <hr className="hr-2"/>
 
-                    <small>© 2017 Bryon Larrance</small>
+                    <small>© 2018 Bryon Larrance</small>
                 </div>
             </div>
         );
