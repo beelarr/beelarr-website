@@ -10,8 +10,6 @@ class App extends Component {
       image: bizPic,
       wrapper: null,
       spin: null
-
-
     };
 
     hover = () => this.setState({image: partyPic, wrapper: 'wrapper', spin: 'spinIt'});
