@@ -45,7 +45,7 @@ class App extends React.Component {
                         <a
                             className="project-links pl-right"
                             href="http://beelarr-weather-simulator.surge.sh/">
-                            <p>React_VR</p>
+                            <p>React_360</p>
                         </a>
                         <a
                             className="project-links"

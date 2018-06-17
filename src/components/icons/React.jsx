@@ -4,7 +4,7 @@ const urls = [
     'https://reactjs.org/',
     'https://facebook.github.io/react-native/',
     'https://facebook.github.io/react-360/',
-    'https://github.com/necolas/react-native-web']
+    'https://github.com/necolas/react-native-web'];
 
 const url = urls[Math.floor(Math.random() * urls.length)];
 
