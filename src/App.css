@@ -14,7 +14,6 @@
 
 }
 
-
 .App-header {
   background-color: #222;
   color: white;
@@ -32,11 +31,9 @@
   font-size: large;
 }
 
-
 .project-links {
   color: #4ea371;
 }
-
 
 h1 {
   font-family: Lobster, Helvetica;
@@ -50,7 +47,6 @@ p.github {
   font-size: 1.5em;
   font-weight: lighter;
   margin-bottom: .2%;
-  margin-top: 5%;
 
 }
 
@@ -80,17 +76,16 @@ hr {
   margin-top: 1%;
   width: 65%;
 }
+
 hr.style1 {
   background: #999;
   border: 0;
   border-bottom: 1px dashed #ccc;
-
 }
 
 
 p {
   font-family: Lato, sans-serif;
-
 }
 
 small {
@@ -102,7 +97,7 @@ small {
 }
 
 .hr-2 {
-  margin-bottom: 4%;
+  margin-bottom: 2%;
 }
 svg {
   margin: 1%;
@@ -116,7 +111,6 @@ a:hover {
 path {
   fill: #48B884;
 }
-
 
 
 /*IMAGE ANIMATION*/
@@ -150,7 +144,6 @@ path {
     transform: rotate(1440deg);
   }
 }
-
 
 
 /*BACKGROUND*/
