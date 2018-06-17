@@ -16,7 +16,7 @@
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "blast-off": "npm run build npm run deploy"
+    "blast-off": "npm run build | npm run deploy"
   },
   "devDependencies": {
     "gh-pages": "^1.0.0"
