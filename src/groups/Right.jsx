@@ -3,8 +3,8 @@ import '../../src/App.css';
 
 import { TS } from '../components/icons/TS';
 import { PG } from '../components/icons/PostgreSQL';
-import { Rails } from '../components/icons/Rails';
-import { Ruby } from '../components/icons/Ruby';
+import { AWS } from '../components/icons/AWS';
+import { Node } from '../components/icons/Node';
 import { Webstorm } from "../components/icons/Webstorm";
 
 
@@ -12,8 +12,8 @@ export const Right = () => (
     <div className="right">
         <TS />
         <PG />
-        <Rails />
-        <Ruby />
+        <AWS />
+        <Node />
         <Webstorm />
     </div>
 );

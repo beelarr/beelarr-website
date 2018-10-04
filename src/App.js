@@ -31,7 +31,7 @@ class App extends React.Component {
                         alt="profile pic" />
                     <h1 className="App-title">Bryon Larrance</h1>
                     <p>JavaScript | React ~ Native ~ VR </p>
-                    <p> Ruby on Rails | Firebase</p>
+                    <p> Serverless Framework, Node & Lambda | Firebase</p>
                     <Left />
                     <Right />
                     <hr className="h1"/>
