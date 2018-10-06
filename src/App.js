@@ -16,8 +16,8 @@ class App extends React.Component {
       spin: null
     };
 
-    hover = () => this.setState({image: partyPic, wrapper: 'wrapper', spin: 'spinIt'});
-    out = () => this.setState({image: bizPic, wrapper: null, spin:null});
+    hover = () => this.setState({image: partyPic, wrapper: 'wrapper', spin: 'spinIt', swell: 'swellIt'});
+    out = () => this.setState({image: bizPic, wrapper: null, spin: null, swell: null});
 
     render() {
         return (
@@ -29,7 +29,12 @@ class App extends React.Component {
                         src={this.state.image}
                         className="App-logo" id={this.state.spin}
                         alt="profile pic" />
-                    <h1 className="App-title">Bryon Larrance</h1>
+                    <h1
+                        className="App-title"
+                        id={this.state.swell}
+                    >
+                        Bryon Larrance
+                    </h1>
                     <p>JavaScript | React ~ Native ~ VR </p>
                     <p> Serverless Framework, Node & Lambda | Firebase</p>
                     <Left />
