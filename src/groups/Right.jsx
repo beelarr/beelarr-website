@@ -5,7 +5,7 @@ import { TS } from '../components/icons/TS';
 import { PG } from '../components/icons/PostgreSQL';
 import { AWS } from '../components/icons/AWS';
 import { Node } from '../components/icons/Node';
-import { Webstorm } from "../components/icons/Webstorm";
+import { Django } from "../components/icons/Django";
 
 
 export const Right = () => (
@@ -14,6 +14,6 @@ export const Right = () => (
         <PG />
         <AWS />
         <Node />
-        <Webstorm />
+        <Django />
     </div>
 );
