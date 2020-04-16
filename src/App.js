@@ -35,8 +35,8 @@ class App extends React.Component {
                     >
                         Bryon Larrance
                     </h1>
-                    <p>JavaScript | React ~ Native ~ VR </p>
-                    <p> Serverless Framework, Node & Lambda | Firebase</p>
+                    <p>JavaScript | React | Prismic CMS </p>
+                    <p> Serverless Framework, Node & ZEIT Now Serverless</p>
                     <Left />
                     <Right />
                     <hr className="h1"/>
