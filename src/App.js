@@ -12,7 +12,6 @@ class App extends React.Component {
     image: bizPic,
     wrapper: null,
     spin: null,
-    test: null,
   };
 
   hover = () =>
