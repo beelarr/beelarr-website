@@ -39,8 +39,8 @@ class App extends React.Component {
           <h1 className="App-title" id={this.state.swell}>
             Bryon Larrance
           </h1>
-          <p>JavaScript | React | Prismic CMS </p>
-          <p> Serverless Framework, Node & ZEIT Now Serverless</p>
+          <p>JavaScript | TypeScript | Next.js | CMS Integrations</p>
+          <p> Jest | Cypress | React Testing Library</p>
           <Left />
           <Right />
           <hr className="h1" />
