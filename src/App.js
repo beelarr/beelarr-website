@@ -1,11 +1,13 @@
 import React from "react";
-import moment from "moment-timezone";
+
 import bizPic from "../../beelarr/src/assets/biz.jpg";
 import partyPic from "../../beelarr/src/assets/party.jpg";
 import "./App.css";
 
 import { Left } from "./groups/Left";
 import { Right } from "./groups/Right";
+
+const date = new Date()
 
 class App extends React.Component {
   state = {
@@ -87,7 +89,7 @@ class App extends React.Component {
             </a>
           </div>
           <hr className="hr-2" />
-          <small>© {moment().year()} Bryon Larrance</small>
+          <small>© {date.getFullYear()} Bryon Larrance</small>
         </div>
       </div>
     );
